@@ -1,0 +1,107 @@
+/* Header
+ ----------------------------------------------------------------------------- */
+.header {
+	padding: 3.3em 0;
+	@extend %clear_a;
+	position: absolute;
+	width: 100%;
+	z-index: 50;
+	&__logo {
+		float: left;
+		// width: 150px;
+		img {
+			width: 13.1em;
+		}
+		a {
+			vertical-align: middle;
+			display: inline-block;
+			margin-right: 0.5em;
+		}
+		&Sub {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 0.9em;
+			max-width: 23em;
+			line-height: 1.1;
+			color: rgba(#fff, .7);
+			text-transform: uppercase;
+			letter-spacing: .07em;
+		}
+	}
+	&__action {
+		float: right;
+		padding-top: 0.1em;
+		@extend %clear_a;
+		&Item {
+			float: left;
+			a {
+				display: inline-block;
+				color: #fff;
+				text-decoration: none;
+				&[href*="tel"] {
+					font-size: 1.7em;
+					font-weight: 500;
+					margin-right: 1em;
+					&:hover {
+						color: #f01e1e;
+					}
+				}
+			}
+		}
+	}
+	&__call {
+		margin-top: 0.1em;
+		padding-bottom: .1em;
+		font-size: 1.15em;
+		&:after {
+			content: '';
+			border-bottom: 1px solid #f01e1e;
+			display: block;
+			transition: .3s;
+			margin-left: 0;
+			width: 100%;
+		}
+		&:hover {
+			&:after {
+				margin-left: 90%;
+				width: 10%;
+			}
+			
+		}
+	}
+	@media (max-width: 767px) {
+		padding: 1.8em 0;
+	    &__logo {
+	    	float: none;
+	    	font-size: 0.7em;
+    		a {
+    			margin-right: 0.8em;
+    			vertical-align: top;
+    			padding-top: 0.3em;
+    		}
+	    	img {
+	    		width: 12.3em;
+	    	}
+	    	&Sub {
+	    		padding-top: 0.8em;
+	    		line-height: 1.2;
+	    		max-width: 21em;
+	    		color: rgba(#fff, .9);
+	    		vertical-align: top;
+	    		
+	    	}
+	    }
+	    &__action {
+	    	display: none;
+	    	
+	    }
+	}
+}
+
+// stiky menu
+.stiky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}

@@ -1,0 +1,53 @@
+// Style for button and pseudo button for input and link
+.btn {
+	color: $btn_default_text_color;
+	color: #fff; // Внести в variables значение для $main_color и отсюда эту строчку удалить
+	font-family: $main_font_family;
+	font-family: 'Gotham Pro'; // Внести в variables значение для $main_font_family и отсюда эту строчку удалить
+	font-size: 1.25em;
+	font-weight: 700;
+    padding: 1.65em 2em;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	display: inline-block;
+	background-color: $btn_default_bg_color; // Внести в variables значение для btn_default_bg_color и отсюда эту строчку удалить
+	background-color: #f51212;
+	text-align: center;
+	max-width: 100%;
+	cursor: pointer;
+	border-radius: 0.625em;
+	transition: all 0.3s;
+	text-decoration: none;
+	position: relative;
+	letter-spacing: .06em;
+	box-shadow: 0 0.438em 1.125em rgba(219, 31, 31, 0.29), inset 0 -0.312em 0 rgba(178, 44, 44, 0.51), inset 0 0 1em #f64242;
+	background-image: linear-gradient(to top, rgba(170, 44, 44, 0.45) 0%, rgba(251, 92, 92, 0.45) 100%);
+	&:hover {
+		text-decoration: none;
+	}
+	&:disabled {
+		filter: grayscale(1);
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		box-shadow: 0 0 2em rgba(219, 31, 31, 0.61), inset 0 -0.125em 0 rgba(178, 44, 44, 0.51), inset 0 0 1em #f64242;
+		background-image: linear-gradient(to top, rgba(170, 44, 44, 0.14) 0%, rgba(251, 92, 92, 0.14) 100%);
+	}
+	&_img {
+		padding-left: 7.2em;
+		img {
+			position: absolute;
+			left: -2em;
+			top: -1em;
+		}
+	}
+	@media (max-width: 767px) {
+		font-size: 1.15em;
+	    padding: 1.65em 1em;
+	    &_img {
+	    	padding-left: 4em;
+	    }
+	}
+}

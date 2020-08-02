@@ -1,0 +1,111 @@
+.tasks{
+	padding-top: 0.6em;
+	padding-bottom: 0em;
+	@media (min-width: 768px) {
+		padding-top: 5.5em;
+	    margin-bottom: -2.1em;
+	}
+	// background-color: #161515;
+	position: relative;
+	&__img{
+		position: absolute;	
+		top: 3%;
+		right: 3%;
+	}
+	&:after{
+		content: '';
+		top: 3%;
+		right: 3%;
+		display: block;
+		position: absolute;
+		background-image: url(../img/el5.png);
+		background-size: contain;
+		width: 17.313em;
+		height: 15.438em;	
+	}
+	&:before{
+		content: '';
+		bottom: 28%;
+		right: 3%;
+		display: block;
+		position: absolute;
+		background-image: url(../img/el5_2.png);
+		background-size: contain;
+		height: 2.125em;
+		width: 2.063em;
+	}
+	.section__title {
+		color: #fff;
+		font-size: 4.3em;
+		font-family: "PF Din Text Cond Pro";
+		font-weight: 500;
+		line-height: 1.2;
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
+		margin-bottom: 0em;
+		&_small{
+			font-family: "Gotham Pro";
+			font-size: 0.33em;
+			font-weight: 300;
+			// line-height: 1.3;
+			&.text{
+				color: rgba(#fff, .6);
+			}
+		}
+	}
+	.section__sub {
+		font-family: "Gotham Pro";
+		font-size: 1.4em;
+		line-height: 1.7;
+		letter-spacing: .1em;
+		font-weight: 300;
+		color: rgba(#fff, .6);
+		text-transform: uppercase;
+	}
+	&__element {
+		position: absolute;
+		top: -2.2em;
+		left: -1.7em;
+		transform: rotateZ(20deg) scale(1.25);
+		@media (max-width : 1366px) {
+			left: -3.5em;
+		}
+		@media (max-width : 1199px) {
+			left: -5em;
+		}
+	}
+	@media (max-width: 767px) {
+		&:after {
+			display: none;
+		}
+	    .section__title {
+			font-size: 2.1em;
+			margin-bottom: 0.5em;
+			margin-top: 1.5em;
+			&_small {
+				color: #fff;
+				&:not(:last-of-type) {
+					font-family: "PF Din Text Cond Pro";
+					font-size: 1em;
+				}
+				&.text {
+					color: #fff;
+					font-size: 0.4em;
+					font-weight: 400;
+				}
+			}
+	    }
+	    .section__sub {
+	    	font-size: .8em;
+	    	color: rgba(#fff, .9);
+	    	margin-bottom: 1em;
+	    }
+	}
+}
+
+.section__tasksTitle {
+	&:before {
+		top: -0.72em;
+		left: -1.1em;
+	}
+}

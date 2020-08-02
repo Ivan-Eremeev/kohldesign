@@ -1,0 +1,454 @@
+// Meeting
+.meeting {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -13.5em;
+		left: -5.5em;
+		width: 55.5em;
+		height: 55.563em;
+		// background-color: ;
+		opacity: 0.3;
+		display: block;
+		background: radial-gradient(rgba(#f51e1e, 0.5), rgba(#f51e1e, 0) 71%);
+		@media (max-width: 767px) {
+			width: 22em;
+			height: 22em;
+		    opacity: 0.3;
+		    top: -10em;
+		    left: -2em;
+		}
+		
+	}
+	@media (max-width : 768px) {
+		margin-bottom: -3em;
+		margin-top: -1em;
+		margin-left: -4em;
+		margin-right: -6em;
+	}
+	&__section {
+		margin-bottom: 5.4em;
+		.container_center {
+			max-width: 80.2em;
+		}
+		@media (max-width: 767px) {
+		    margin-bottom: 4.7em;
+		}
+			
+	}
+	&__wrap {
+		position: relative;
+		top: 1em;
+		// left: -3em;
+		// width: 84%;
+		min-height: 40em;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		@media (max-width : 767px) {
+			min-height: 20em;
+		}
+	}
+	&__img {
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		height: auto;
+	}
+	&__shadow {
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		min-height: 175%;
+		border-radius: 50%;
+		box-shadow: -100px -150px 200px 0px rgba(95,34,34,0.4);
+	}
+	&__meteorite_06,
+	&__meteorite_07 {
+		position: absolute;
+		z-index: 5;
+		@media (max-width : 767px) {
+			display: none;
+		}
+	}
+	&__meteorite_06 {
+		top: -2em;
+		right: 3em;
+		width: 17em;
+		@media (max-width : 768px) {
+			top: -1em;
+			right: -20em;
+		}
+	}
+	&__meteorite_07 {
+		top: 7em;
+		left: -19em;
+		width: 15em;
+		@media (max-width : 768px) {
+			top: 6em;
+			left: -30em;
+		}
+	}
+	&__element {
+		position: absolute;
+		top: 0em;
+		left: -1.3em;
+		transform: rotateZ(205deg) scale(1.25);
+		@media (max-width : 768px) {
+			display: none;
+		}
+	}
+}
+
+// Meeting poits
+.meeting {
+	&__point {
+		position: absolute;
+		z-index: 5;
+		cursor: default;
+		font-weight: 500;
+		@media (max-width : 767px) {
+			font-size: 1em;
+		}
+	}
+	&__icon {
+		color: #f92626;
+		font-size: 1em;
+		margin-right: 0.1em;
+	}
+	&__amsterdam {
+		top: 38.3%;
+		left: 12.5%;
+		// @media (max-width : 768px) {
+		// 	top: 50%;
+		// 	left: 16%;
+		// }
+		@media (max-width : 767px) {
+			top: 42%;
+			left: 12%;
+			padding-top: 1em;
+			.meeting__icon {
+				display: block;
+				text-align: center;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				// padding-bottom: 3em;
+			}
+		}
+	}
+	&__barentsevo {
+		top: 15.3%;
+		left: 25.5%;
+		// @media (max-width : 768px) {
+		// 	top: 23%;
+		// 	left: 30%;
+		// }
+		@media (max-width : 767px) {
+			top: 16%;
+			left: 25%;
+			padding-left: 0.9em;
+			width: 5em;
+			.meeting__icon {
+				position: absolute;
+				left: 0;
+				top: 0.4em;
+			}
+		}
+	}
+	&__germany {
+		top: 35.5%;
+		left: 27.3%;
+		// @media (max-width : 768px) {
+		//     top: 54%;
+		//     left: 27%;
+		// }
+		@media (max-width : 767px) {
+		    top: 39%;
+		    left: 26.9%;
+		}
+	}
+	&__czech  {
+		top: 41.8%;
+		left: 30.3%;
+		// @media (max-width : 768px) {
+		//     top: 58%;
+		// 	left: 30%;
+		// }
+		@media (max-width : 767px) {
+		    top: 45%;
+			left: 30%;
+		}
+	}
+	&__moscow  {
+		top: 27.6%;
+		left: 43.7%;
+		// @media (max-width : 768px) {
+		//     top: 39%;
+		// 	left: 42.5%;
+		// }
+		@media (max-width : 767px) {
+		    top: 31%;
+			left: 45%;
+		}
+	}
+	&__sochi  {
+		top: 41.5%;
+		left: 45.3%;
+		// @media (max-width : 768px) {
+		//     top: 60%;
+		// 	left: 45%;
+		// }
+		@media (max-width : 767px) {
+		    top: 46%;
+			left: 46%;
+		}
+	}
+	&__izhevsk  {
+		top: 28.1%;
+		left: 55.9%;
+		// @media (max-width : 768px) {
+		//     top: 36%;
+		// 	left: 55%;
+		// }
+		@media (max-width : 767px) {
+		    top: 32%;
+			left: 60%;
+		}
+	}
+	&__kazan  {
+		top: 34.7%;
+		left: 53.3%;
+		// @media (max-width : 768px) {
+		//     top: 47%;
+		// 	left: 53%;
+		// }
+		@media (max-width : 767px) {
+		    top: 38%;
+			left: 55%;
+			padding-left: 0.9em;
+			width: 5em;
+			.meeting__icon {
+				position: absolute;
+				left: 0;
+				top: 0.4em;
+			}
+		}
+	}
+	&__gudermes  {
+		top: 47.2%;
+		left: 51.1%;
+		// @media (max-width : 768px) {
+		//     top: 64%;
+		// 	left: 51%;
+		// }
+		@media (max-width : 767px) {
+		    top: 53%;
+			left: 52%;
+			width: 6em;
+			padding-left: 0.9em;
+			.meeting__icon {
+				position: absolute;
+				left: 0;
+			}
+		}
+	}	
+}
+
+// Meeting tooltips
+.meeting {
+	&__tooltip {
+		position: absolute;
+		z-index: 3;
+		padding: 0.5em 1em;
+		border: 0.063em solid #6f6f6f;
+		text-align: center;
+		background-color: rgba(23, 22, 22, 0.7);
+		box-sizing: border-box;
+		@media (max-width : 768px) {
+			display: none;
+		}
+	}
+
+	&__amsterdamTooltip {
+		top: 3.2em;
+		left: -1.2em;
+		padding: 0.5em 1em 0.8em;
+		img {
+			width: 7.25em;
+		}
+	}
+	&__barentsevoTooltip {
+		top: -5.5em;
+		left: -0.4em;
+	    padding: 1.2em 0.8em 0.8em;
+		img {
+			width: 8.063em;
+		}
+	}
+	&__germanyTooltip {
+		top: -5em;
+		left: -7em;
+		width: 16em;
+		& > img {
+			margin-right: 0.6em;
+			margin-bottom: 0;
+			display: inline-block;
+			&:nth-child(1) {
+				width: 3.063em;
+			}
+			&:nth-child(2) {
+				width: 5.125em;
+				padding-bottom: 0.4em;
+			}
+			&:nth-child(3) {
+				width: 4.25em;
+				margin-right: 0;
+			}
+		}
+	}
+	&__czechTooltip {
+		top: 3.3em;
+		left: -3em;
+		padding: 0.7em 1.7em;
+		img {
+			width: 3.125em;
+		}
+	}
+	&__moscowTooltip {
+		top: -10.6em;
+		left: -2.1em;
+		padding: 1em 1.5em 0.5em;
+		min-width: 11.3em;
+		text-align: left;
+		& > img {
+			margin-bottom: 0.5em;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&:nth-child(1) {
+				width: 2.625em;
+			}
+			&:nth-child(2) {
+				width: 8.875em;
+			}
+			&:nth-child(3) {
+				width: 7.5em;
+			}
+		}
+	}
+	&__sochiTooltip {
+		top: 3.3em;
+		left: -5.8em;
+		padding: 1em 1em 0;
+		text-align: left;
+		& > img {
+			margin-bottom: 0.7em;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&:nth-child(1) {
+				width: 7.688em;
+			}
+			&:nth-child(2) {
+				width: 5.25em;
+			}
+		}
+	}
+	&__izhevskTooltip {
+		top: -4.9em;
+		right: -6.4em;
+		min-width: 8em;
+		padding: 1em 1em 0.3em;
+		img {
+			width: 5.438em;
+		}
+	}
+	&__kazanTooltip {
+		top: -1.2em;
+		right: -11.5em;
+		min-width: 10em;
+		text-align: left;
+		img {
+			width: 4.75em;
+		}
+	}
+	&__gudermesTooltip {
+		top: 2.3em;
+		left: 2em;
+		min-width: 9.7em;
+		padding: 0.7em 1em;
+		img {
+			width: 7.25em;
+		}
+	}
+}
+
+// Meeting arrows
+.meeting {
+	&__arrow {
+		&_down,
+		&_top,
+		&_left {
+			position: absolute;
+			z-index: 5;
+		}
+		&_down,
+		&_top {
+			width: 1.5em;
+			height: 0.8em;
+		}
+		&_down {
+			bottom: -0.6em;
+		}
+		&_top {
+			top: -0.85em;
+		}
+		&_left {
+			width: 0.9em;
+			height: 1.5em;
+			left: -0.8em;
+		}
+	}
+	&__barentsevoArrow,
+	&__amsterdamArrow,
+	&__gudermesArrow {
+		left: 10%;
+	}
+	&__germanyArrow {
+		right: 30%;
+	}
+	&__moscowArrow {
+		left: 35%;
+	}
+	&__czechArrow {
+		right: 10%;
+	}
+	&__izhevskArrow {
+		bottom: 10%;
+	}
+	&__kazanArrow {
+		top: 35%;
+	}
+}
+
+.section__meetingTitle {
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: .06em;
+	&:before {
+		top: -0.7em;
+		left: -1em;
+	}
+	.section__title_left {
+		margin-left: 5.8%;
+		@media (max-width : 1366px) {
+			margin-left: 0;
+		}
+		@media (max-width : 768px) {
+			margin-top: 1.5em;
+		}
+	}
+}

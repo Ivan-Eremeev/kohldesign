@@ -1,0 +1,542 @@
+/*!
+ *
+ * Evgeniy Ivanov - 2018
+ * busforward@gmail.com
+ * Skype: ivanov_ea
+ *
+ */
+
+@import 'mixins/mixin';
+// Fonts
+@import 'core/fonts';
+// @include font-face("PF Din Text Cond Pro", '../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Medium', 500, normal);
+// @include font-face("Gotham Pro", '../fonts/GothamPro/GothamPro', 400, normal);
+
+
+ // Import files
+
+@import 'variables/variables';
+@import 'core/reset';
+@import 'core/template';
+@import 'core/header';
+@import 'core/footer';
+@import 'core/form';
+@import 'core/grid';
+@import 'core/soc';
+@import 'core/breadcrumb';
+@import 'core/pagination';
+@import 'core/buttons';
+@import 'core/video';
+@import 'core/icon';
+
+@import 'vendor/slick';
+@import 'vendor/modal';
+
+
+
+@import 'block/ivan';
+@import 'block/plate';
+@import 'block/tasks';
+@import 'block/promotion';
+@import 'block/value';
+@import 'block/form';
+@import 'block/strategy';
+@import 'block/meeting';
+@import 'block/map';
+
+@import 'block/plate';
+@import 'block/tasks';
+
+
+// Заглушка
+.nameSection {
+	color: #fff4fb;
+	padding: 16em 0;
+	background: url('../img/05-03.png') no-repeat center right;
+	background-size: contain;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -(55.5em / 2);
+		left: -(55.5em / 2);
+		width: 55.5em;
+		height: 55.563em;
+		// background-color: ;
+		opacity: 0.4;
+		display: block;
+		background: radial-gradient(#f51e1e, rgba(#f51e1e, 0) 71%);
+		
+	}
+	.section__title {
+		position: relative;
+		&:before {
+			content: '';
+			width: 3em;
+			height: 3em;
+			background: url('../img/title-ell.png') no-repeat center center;
+			background-size: contain;
+			position: absolute;
+			left: -1.2em;
+			top: -1.1em;
+		}
+	}
+	a {
+		color: #f51e1e;
+		font-weight: 400;
+	}
+	h2 {
+		font-weight: 400;
+		line-height: 1.6;
+	}
+}
+
+.fScreen {
+	padding: 11.7em 0 0.9em;
+	margin-bottom: -3.5em;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -(55.5em / 2);
+		left: -(55.5em / 2);
+		width: 55.5em;
+		height: 55.563em;
+		// background-color: ;
+		opacity: 0.4;
+		display: block;
+		background: radial-gradient(#f51e1e, rgba(#f51e1e, 0) 71%);
+		@media (max-width: 767px) {
+		    top: -36em;
+		    left: -36em;
+		    opacity: 0.5;
+		}
+		
+	}
+	@extend %clear_a;
+	.container_center {
+		@extend %clear_a;
+	}
+	.section__title {
+		font-size: 4.37em;
+		line-height: 1.14;
+		margin-top: 0.7em;
+		margin-left: -.1em;
+		margin-bottom: 0.35em;
+		letter-spacing: .015em;
+		&:before {
+			display: none;
+			
+		}
+	}
+	&__left {
+		float: left;
+		width: 52em;
+		margin-right: -20%;
+	}
+	&__sub {
+		font-size: 1.95em;
+		color: rgba(#fff, 0.5);
+		margin-bottom: 1.8em;
+		letter-spacing: -0.01em;
+	}
+	&__action {
+
+		&Name {
+			color: rgba(#fff4fb, .3);
+			position: relative;
+			padding-left: 4.9em;
+			line-height: 1.4;
+			margin-bottom: 5.4em;
+			letter-spacing: 0.05em;
+			&:before {
+				content: '';
+				background: url('../img/action_first.png') no-repeat center;
+				background-size: contain;
+				width: 2.063em;
+				height: 5.063em;
+				position: absolute;
+				left: 1.6em;
+				top: 1em;
+			}
+		}
+	}
+	&__btn {
+
+	}
+	&__img {
+		position: relative;
+		float: right;
+		text-align: right;
+		width: 78%;
+		margin-right: -18%;
+		margin-top: -4em;
+		margin-bottom: -0.7em;
+	}
+	&__signature {
+		position: absolute;
+		bottom: 13.5em;
+		left: 6em;
+		text-align: left;
+	}
+	&__name {
+		font-size: 1.563em;
+		font-weight: 500;
+		font-family: "PF Din Text Cond Pro";
+		line-height: 1.99;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		&Sub {
+			color: rgba(#fff4fb, .3);
+			font-size: 1em;
+			font-weight: 400;
+			line-height: 1.5;
+			letter-spacing: 0.05em;
+		}
+	}
+	.btn {
+		padding-top: 1.8em;
+		padding-bottom: 2.1em;
+		// padding-right: 3.8em;
+	}
+	.btn_img {
+		img {
+			width: 10.48em;
+		}
+	}
+	> .fly {
+		&_1 {
+			top: 7em;
+			right: 4.6em;
+			width: 4em;
+		}
+		&_2 {
+			top: 22.3em;
+			left: 4.7em;
+			
+		}
+		&_3 {
+			top: 57em;
+			left: 12em;
+			width: 2.8em;
+			height: 2.2em;
+			
+		}
+		&_4 {
+			top: 36.2em;
+			right: 7.2em;
+			width: 14em;
+		}
+	}
+	@media (max-width: 767px) {
+		padding: 4.7em 0 0;
+		overflow: hidden;
+		
+	    &__left {
+	    	float: none;
+	    	width: 100%;
+	    	margin-right: auto;
+	    }
+	    .section__title {
+	    	font-size: 2em;
+	    	line-height: 1.25;
+	    	margin-left: 0;
+	    	max-width: 80%;
+	    	margin-bottom: 0.2em;
+	    	letter-spacing: 0.01em;
+	    }
+	    &__sub {
+	    	font-size: 1.1em;
+	    	max-width: 66%;
+	    	margin-bottom: 11.1em;
+	    	br {
+	    		display: none;
+	    		
+	    	}
+	    }
+	    &__img {
+	    	position: absolute;
+	    	top: 24.2em;
+	    	width: 100%;
+	    	img {
+	    		position: relative;
+	    		max-width: none;
+	    		width: 124%;
+	    		right: 1em;
+	    	}
+	    }
+	    &__signature {
+	    	left: 0;
+	    	bottom: auto;
+	    	top: 4.6em;
+	    	max-width: 40%;
+	    }
+	    &__name {
+	    	font-size: 1.35em;
+	    	line-height: 1.3;
+	    	margin-bottom: .5em;
+	    }
+	    &__action {
+	    	position: relative;
+	    	z-index: 10;
+	    	padding-top: 9.5em;
+	    	padding-bottom: 3.7em;
+	    	margin-bottom: 3.4em;
+	    	&Name {
+	    		position: absolute;
+	    		bottom: 0em;
+	    		margin-bottom: 0;
+	    		padding-left: 0;
+	    		text-align: center;
+	    		width: 100%;
+	    		&:before {
+	    			display: none;
+	    			
+	    		}
+	    	}
+	    }
+	    .fly {
+	    	display: none;
+	    }
+		&__btn {
+			padding-left: 1.7em;
+			padding-right: 1.7em;
+		}
+	    .btn {
+	    	width: 100%;
+	    	img {
+	    		width: 5em;
+	    		top: 1em;
+	    		left: -1em;
+	    	}
+	    }
+	}
+}
+
+.company {
+	margin-top: 0em;
+	@extend %clear_a;
+	&__label {
+		font-size: 1.563em;
+		font-family: "PF Din Text Cond Pro";
+		text-transform: uppercase;
+		font-weight: 500;
+		margin-right: 1em;
+		float: left;
+		width: 9em;
+		padding-top: 0.9em;
+	}
+	&__list {
+		overflow: hidden;
+		@extend %clear_a;
+	}
+	&__item {
+		float: left;
+		width: 16.6%;
+		position: relative;
+		cursor: pointer;
+		&:hover {
+			.company {
+				&__img {
+					background-color: #fff;
+					@media (min-width: 768px) {
+						border-color: #fff;
+					    
+					}
+					&_hover {
+						display: inline-block !important;
+					}
+					&_visible {
+						display: none !important;
+					}
+					img {
+						filter: contrast(1) grayscale(0);
+					}
+				}
+				&__drop {
+					opacity: 1;
+				}
+			}
+		}
+		&:nth-child(5) {
+			img {
+				filter: contrast(0) grayscale(1);
+			}
+		}
+	}
+	&__img {
+		text-align: center;
+		border: 1px solid rgba(#3b3939, .4);
+		padding: 0.8em 2em;
+		transition: .3s;
+		&:before {
+			content: '';
+			height: 6.33em;
+			display: inline-block;
+			vertical-align: middle;
+			
+		}
+		img {
+			vertical-align: middle;
+			display: inline-block;
+			max-width: 95%;
+			transition: .3s;
+			max-height: 5em;
+			filter: contrast(0) grayscale(1);
+		    // filter: brightness(95%);
+		}
+		&_hover {
+			display: none !important;
+			@media (max-width: 767px) {
+			    display: inline-block !important;
+			}
+		}
+		&_visible {
+			display: inline-block !important;
+			@media (max-width: 767px) {
+			    display: none !important;
+			}
+		}
+	}
+	&__drop {
+		transition: .3s;
+		padding: 1.7em 0;
+		opacity: 0;
+		// position: absolute;
+		
+	}
+	&__name {
+		font-weight: 500;
+		font-size: 1.15em;
+		margin-bottom: 0.2em;
+	}
+	&__job {
+		color: rgba(#fff4fb, 0.5);
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 4em;
+	    &__label {
+	    	font-size: 2.2em;
+	    	margin-right: auto;
+	    	float: none;
+	    	width: auto;
+	    	margin-bottom: 0.25em;
+	    }
+	    &__item {
+	    	width: 33.3%;
+	    }
+	    &__drop {
+	    	display: none;
+	    }
+	    &__img {
+	    	background-color: #fff;
+	    	border: .25em solid #0f0d0d;
+	    	&:before {
+	    		height: 3.5em;
+	    	}
+	    	img {
+		    	filter: contrast(1) grayscale(0) !important;
+		    	max-height: 3em;
+		    	max-width: 95%;
+	    	}
+	    }
+	}
+}
+
+.fly {
+	position: absolute;
+	display: block;
+	z-index: 5;
+}
+
+
+
+.videoScreen {
+	// margin-bottom: -7em;
+	.section__title {
+		text-align: center;
+	}
+	.video__prev {
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		
+		// background-color: #000;
+		filter: grayscale(1);
+	}
+}
+
+// .getTest {
+// 	.btn_img {
+// 		padding: 1.65em 2em;
+// 	    padding-left: 7.2em;
+// 		img {
+// 			width: 6.8em;
+// 		}
+// 	}
+// }
+
+.value__img {
+	filter: grayscale(1);
+}
+
+
+.video {
+	&:before {
+		display: none;
+		
+	}
+	&:after {
+		display: none;
+		
+	}
+	&__wrapper {
+		background: none !important;
+		background-image: none !important;
+	}
+}
+
+.section {
+	overflow: hidden;
+}
+
+
+// .section__title {
+// 	position: relative;
+// 	z-index: 3;
+// 	color: #fff;
+// 	font-size: 4em;
+// 	font-family: 'PF Din Text Cond Pro';
+// 	font-weight: 500;
+// 	line-height: 1.2;
+// 	text-transform: uppercase;
+// 	&:before {
+// 		content: '';
+// 		position: absolute;
+// 		// left: 0em;
+// 		top: -0.8em;
+// 		width: 2.7em;
+// 		height: 2.7em;
+// 		background: url('../img/title-ell.png') no-repeat center center;
+// 		background-size: contain;
+// 	}
+// 	@media (max-width : 1366px) {
+// 		font-size: 2.9em;
+// 		br {
+// 			display: none;
+// 		}
+// 	}
+// }
+
+// .section__sub {
+// 	margin-top: 0.27em;
+// 	color: #fff;
+// 	font-size: 0.46em;
+// 	font-family: 'Gotham Pro';
+// 	font-weight: 300;
+// 	text-transform: none;
+// }
+
+
+
+.brandScreen {
+}

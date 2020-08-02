@@ -1,0 +1,126 @@
+/* Footer
+ ----------------------------------------------------------------------------- */
+.footer {
+	font-size: $main_font_size;
+	position: relative;
+	// height: $footer_height;
+	padding: 3.8em 0 2em;
+	@extend %clear_a;
+	@media (max-width : 768px) {
+		text-align: center;
+		padding: 2.3em 0 2em;
+	}
+	&__left {
+		float: left;
+		@extend %clear_a;
+		display: table;
+		@media (max-width : 768px) {
+			float: none;
+			display: block;
+			padding-left: 0.9em;
+			margin: 0 auto 1.7em;
+			text-align: left;
+		}
+	}
+	&__logo {
+		margin-right: 0.7em;
+		display: table-cell;
+		width: 11.5em;
+		@media (max-width : 768px) {
+			width: 8.6em;
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 0em;
+			
+		}
+	}
+	&__sub {
+		color: #fff;
+		font-size: 0.75em;
+		font-family: "Muller";
+		text-transform: uppercase;
+		opacity: 0.7;
+		display: table-cell;
+		vertical-align: middle;
+		@media (max-width: 767px) {
+			font-family: "Gotham Pro";
+			width: 22.9em;
+			line-height: 1.2;
+		    font-size: 0.6em;
+		    text-align: left;
+		    font-weight: 400;
+		    padding-left: 0.8em;
+		    padding-top: 0.7em;
+		    display: inline-block;
+		    vertical-align: top;
+		    letter-spacing: .11em;
+		    br {
+		    	display: none;
+		    }
+		}
+	}
+	&__center {
+		float: left;
+		margin-left: 5.5em;
+		@media (max-width : 768px) {
+			float: none;
+			margin-left: 0;
+		}
+	}
+	&__policy {
+		margin-bottom: 1.5em;
+		display: block;
+		color: #00b9fe;
+		font-size: 0.875em;
+		@media (max-width : 768px) {
+			font-size: 1.07em;
+			margin-bottom: 1.3em;
+		}
+	}
+	&__copy {
+		color: #fff4fb;
+		opacity: 0.3;
+		@media (max-width: 767px) {
+		    font-size: 1.1em;
+		}
+	}
+	&__right {
+		float: right;
+		@media (max-width : 768px) {
+			float: none;
+			margin-bottom: 0.95em;
+		}
+	}
+	&__tel {
+		margin-bottom: 0.5em;
+		font-size: 1.5em;
+  		font-weight: 500;
+  		@media (max-width : 768px) {
+			margin-bottom: 0.6em;
+		}
+	}
+	&__order {
+		display: inline-block;
+		float: right;
+		color: #fff;
+		font-size: 1em;
+		text-align: right;
+		text-decoration: none;
+		border-bottom: 1px solid #f01e1e;
+		&:hover {
+			border-color: transparent;
+		}
+		@media (max-width : 768px) {
+			float: none;
+			padding: 1em 1.8em;
+			font-size: 1.2em;
+			letter-spacing: .04em;
+			border-radius: 1.5em;
+			border: 0.063em solid #f01e1e;
+			&:hover {
+				background-color: #f01e1e;
+			}
+		}
+	}
+}
+
